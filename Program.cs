@@ -1,6 +1,6 @@
 ﻿using System;
 
-//Namespace
+//namespace
 namespace NumberGuesser
 {
     //main class
@@ -15,16 +15,13 @@ namespace NumberGuesser
             GreetUser(); //take user name, greet them
 
             while (true)
-            {
-                //Init correct number
-                //int correctNumber = 7;
-
+            {               
                 //random number
                 System.Random random = new System.Random();
                 int correctNumber = random.Next(1, 10);
 
 
-                //Init guess var
+                //init guess var
                 int guess = 0;
 
                 //ask user for number
@@ -84,25 +81,25 @@ namespace NumberGuesser
 
         static void GetAppInfo()
             {
-                //Set app vars
+                //set app vars
 
                 string appName = "Number Guesser";
                 string appVersion = "1.0.0";
                 string appAuthor = "Julia";
 
-                //Change text color
+                //change text color
                 Console.ForegroundColor = ConsoleColor.Cyan;
 
-                //Write out app info
+                //write out app info
                 Console.WriteLine("{0}: Version {1} by {2}", appName, appVersion, appAuthor);
 
-                //Reset text color
+                //reset text color
                 Console.ResetColor();
             }
 
         static void GreetUser()
         {
-            //Ask user for name
+            //ask user for name
             Console.WriteLine("What is your name?");
 
             //get user input
@@ -117,10 +114,10 @@ namespace NumberGuesser
         {
             Console.ForegroundColor = color;
 
-            //Write out app info
+            //write out app info
             Console.WriteLine(message);
 
-            //Reset text color
+            //reset text color
             Console.ResetColor();
         }
     }
